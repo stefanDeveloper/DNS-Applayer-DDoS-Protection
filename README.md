@@ -178,10 +178,10 @@ flowchart TD
     attackerips & catchment -.- grid & evasion
 
     grid --> optimization
-    grid -. eval_results_*.json .- optimization
+    grid -. "eval_results_*.json" .- optimization
     optimization -. Best config .- evasion
     evasion --> evasioneval
-    evasion -. eval_results_*.json .- evasioneval
+    evasion -. "eval_results_*.json" .- evasioneval
 ```
 
 With our populated database, we can now search for optimal algorithm parameters.
